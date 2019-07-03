@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <title>Nadiush</title>
+    <style>
+      body {
+        margin: 0px;
+      }
+
+      header, nav, content, sidebar, footer {
+        border: 1px solid black;
+        margin: 8px;
+      }
+
+      content,
+      sidebar {
+        width: 50%;
+      }
+
+      div {
+        display: flex;
+      }
+
+      div:hover {
+        background: yellow;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>header</header>
+    <nav>navigation</nav>
+    <div>
+      <content>content</content>
+      <sidebar>sidebar</sidebar>
+    </div>
+    <footer>footer</footer>
+
+    <script>
+
+			// variables
+			var name = "nadia";
+			var age = 37;
+			var condition = age < 40;
+
+			// conditions
+			if(condition) {
+				console.log('age is less than 40');
+			} else {
+				console.log('age is greater than 40');
+			}
+
+			// loops
+			for(var i = 0; i < 10; i = i+1) {
+				console.log(i);
+			}
+
+			// prompt
+			var input = prompt("write your name: ");
+			console.log("your name is: ", input);
+
+			var inputAge = parseInt(prompt("write your age: "));
+			console.log("your age plus 3 is: ", inputAge + 3);
+
+		</script>
+  </body>
+</html>

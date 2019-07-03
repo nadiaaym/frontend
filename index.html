@@ -41,6 +41,10 @@
 			var name = "nadia";
 			var age = 37;
 			var condition = age < 40;
+      var array = ["nadia", "gal"];
+      var object = { name: "nadia", age: 37};
+
+      console.log('object.name: ', object.name);      
 
 			// conditions
 			if(condition) {
@@ -50,9 +54,9 @@
 			}
 
 			// loops
-			for(var i = 0; i < 10; i = i+1) {
-				console.log(i);
-			}
+			for(var i = 0; i < array.length; i = i + 1) {
+        console.log('array[' + i + '] =', array[i]);
+      }
 
 			// prompt
 			var input = prompt("write your name: ");

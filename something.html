@@ -1,0 +1,37 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var products = [
+        {id: 1, description: 'bla bla', vendor: 'some vendor'},
+        {id: 0, description: 'some shoes', vendor: 'adidas'},
+      ];
+
+      console.log('before edit: ', products);
+      editProduct({id: 0, description: 'blabla', vendor: "i'm changed !!!"});
+      console.log('after edit: ', products);
+
+      function editProduct(product) {
+        var index = getProductIndexById(product.id);
+        products[index] = product;
+      }
+
+      function getProductIndexById(id) {
+        // loop over all products
+        for (var i = 0; i < products.length; i++) {
+          var product = products[i];
+          // check if product id is equal to received argument
+          if (product.id == id) {
+            // return its index in the array
+            return i;
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
